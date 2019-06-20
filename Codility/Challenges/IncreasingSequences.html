@@ -1,0 +1,65 @@
+<html>
+<script>
+
+    var arr, 
+    // arr = [1, 3, 3, 4, 4,5,6,6,7,8,13,24,4,24, -1000000];
+    // arr = [];
+    // arr = [-10];
+    // arr = [-2, 1];
+    // arr = [-3, 1, 3];
+    // arr = [-2, 1, 1];
+    // arr = [3,2,-6,4,0];
+    arrA= [5,3,7,7,10];
+    arrB= [1,6,6,9,9];
+    // arrA= [1,5,6];
+    // arrB= [-2,0,2];
+    // arrA= [5,-3,6,4,8];
+    // arrB= [2,6,-5,1,0];
+    // arrA= [2,2];
+    // arrB= [1,3];
+
+
+    function solution(A, B) {
+
+        var swapp, cont = 0;
+
+        if (A.length > 100000) {
+            return 0;
+        }
+
+        if(A.length < 1) {
+            return 0;
+        }
+
+        for ( var x = 1 ; x < A.length ; x ++ ) {
+            console.info('A[x]: ' + A[x]);
+            console.info('B[x]: ' + B[x]);    
+
+            if ( (A[x] <= A[x-1] && A[x] < B[x] && B[x] > A[x-1]) || 
+                 (B[x] <= B[x-1] && B[x] < A[x] && A[x] > B[x-1]) ) {
+                swapp = A[x];
+                A[x]  = B[x];
+                B[x]  = swapp;
+
+
+                cont++;
+            }
+            console.info(x)
+            if (A[x-1] >= A[x] || B[x-1] >= B[x]) {
+                console.info('A: ' + A);
+                console.info('B: ' + B);    
+                return -1;
+            }
+        }
+
+        console.info('A: ' + A);
+        console.info('B: ' + B);
+
+        return  cont;
+    }
+
+
+    console.info('resultado:  ' + solution(arrA, arrB))
+
+</script>
+</hmtl>

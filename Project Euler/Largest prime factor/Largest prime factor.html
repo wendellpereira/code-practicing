@@ -1,0 +1,27 @@
+<html>
+<script>
+
+    var arr, primes, number, results;
+    // arr = [1, 3, 3, 4, 4,5,6,6,7,8,13,24,4,24, -1000000];
+    arr = [];
+    primes = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71];
+    number = 144;
+    results = [];
+
+    function solution(n) {
+        while (n > 1) {
+            for (var x = 0; x < primes.length; x++) {
+                if (n % primes[x] == 0 ) {
+                    results.push(primes[x])
+                    n = n % primes[x];
+                    console.log(primes[x]);
+                }
+            }
+        }
+    }
+
+
+    console.info(solution(number))
+
+</script>
+</hmtl>

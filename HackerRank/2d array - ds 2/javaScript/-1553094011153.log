@@ -1,0 +1,81 @@
+script.js:9 -1 1 -1
+script.js:10 -1
+script.js:11 -1 -1 -1
+script.js:12 sum: -5
+script.js:13 ------------
+script.js:9 1 -1 0
+script.js:10 0
+script.js:11 -1 -1 0
+script.js:12 sum: -2
+script.js:13 ------------
+script.js:9 -1 0 0
+script.js:10 0
+script.js:11 -1 0 0
+script.js:12 sum: -2
+script.js:13 ------------
+script.js:9 0 0 0
+script.js:10 0
+script.js:11 0 0 0
+script.js:12 sum: 0
+script.js:13 ------------
+script.js:9 0 -1 0
+script.js:10 -1
+script.js:11 0 -9 2
+script.js:12 sum: -9
+script.js:13 ------------
+script.js:9 -1 0 0
+script.js:10 -1
+script.js:11 -9 2 -4
+script.js:12 sum: -13
+script.js:13 ------------
+script.js:9 0 0 0
+script.js:10 0
+script.js:11 2 -4 -4
+script.js:12 sum: -6
+script.js:13 ------------
+script.js:9 0 0 0
+script.js:10 0
+script.js:11 -4 -4 0
+script.js:12 sum: -8
+script.js:13 ------------
+script.js:9 -1 -1 -1
+script.js:10 -9
+script.js:11 -7 0 0
+script.js:12 sum: -19
+script.js:13 ------------
+script.js:9 -1 -1 0
+script.js:10 2
+script.js:11 0 0 -2
+script.js:12 sum: -2
+script.js:13 ------------
+script.js:9 -1 0 0
+script.js:10 -4
+script.js:11 0 -2 0
+script.js:12 sum: -7
+script.js:13 ------------
+script.js:9 0 0 0
+script.js:10 -4
+script.js:11 -2 0 0
+script.js:12 sum: -6
+script.js:13 ------------
+script.js:9 0 -9 2
+script.js:10 0
+script.js:11 0 0 -1
+script.js:12 sum: -8
+script.js:13 ------------
+script.js:9 -9 2 -4
+script.js:10 0
+script.js:11 0 -1 -2
+script.js:12 sum: -14
+script.js:13 ------------
+script.js:9 2 -4 -4
+script.js:10 -2
+script.js:11 -1 -2 -4
+script.js:12 sum: -15
+script.js:13 ------------
+script.js:9 -4 -4 0
+script.js:10 0
+script.js:11 -2 -4 0
+script.js:12 sum: -14
+script.js:13 ------------
+script.js:34 Result: 0

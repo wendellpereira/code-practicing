@@ -1,0 +1,41 @@
+<html>
+<script>
+
+    var arr, 
+    // arr= 'abbabba';
+    // arr='codility';
+    arr='pindamonhagaba';
+
+
+    function solution(N) {
+
+        if (N.length > 1000000) {
+            return 0;
+        }
+
+        if(N.length < 1) {
+            return 0;
+        }
+
+        var A =[], B = [''], max = 0;
+
+        for ( var x = 0 ; x < N.length ; x ++ ) {
+            A.push( N.substring(0, x) );
+            B.push( N.substring( (N.length -1) -x, N.length ));
+
+            console.info(A);
+            console.info(B);
+            
+            if (A[x] === B[x]) {
+                console.info('A[x]: '+A[x]);
+                console.info('B[x]: '+B[x]);
+                max = Math.max(max, A[x].length);
+            }
+        }
+        return  max;
+    }
+
+    console.info('result:  ' + solution(arr))
+
+</script>
+</hmtl>

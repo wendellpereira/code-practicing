@@ -1,0 +1,56 @@
+<html>
+<script>
+
+    var arr, cont;
+    // arr = [1, 3, 3, 4, 4,5,6,6,7,8,13,4,24];
+    // arr = [1, 3, 3, 4, 4,5,6,6,7,8,13,2];
+    // arr = [1, 3, 3, 4, 4,5,6,6,7,8,13,24,4,24, -1];
+    arr  = [1, 5, 2, 1, 4, 0];
+    // arr  = [];
+    cont = 0;
+
+    function solution(A) {
+
+        if (A.length > 100000) {
+            return 0;
+        }
+
+        if(A.length === 0) {
+            return 0;
+        }
+
+        // A.sort( function(a,b) {return b-a;} );
+        console.info('array principal: ' + A);
+
+        function check(Range, endToCheck, index) {
+            console.info('Range: ' + Range)
+            console.info('endToCheck: ' + endToCheck)
+            console.info('index: ' + index)
+            for ( var x = 0 ; x < Range.length ; x ++ ) {
+                if(endToCheck >= (index - Range[x]) || endToCheck <= (index + Range[x]) ) {
+                   cont++;
+                }
+            }
+        }
+        
+        for ( var x = 0 ; x < A.length ; x ++ ) {
+            var init= undefined, end= undefined;
+
+            // if ( A[x] < 0 || A[x] > 2147483647 ) { 
+                // return 0; 
+            // }
+
+            init = x - A[x];
+            end  = x + A[x];
+
+            check( A.slice(x +1), end, x +1);
+        }
+
+        return cont;
+    }
+
+
+    console.info(solution(arr))
+
+</script>
+</hmtl>
